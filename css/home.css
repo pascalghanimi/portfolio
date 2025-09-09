@@ -383,6 +383,7 @@ table th {
 .skills-table-head {
   padding: 10px;
   background-color: #1b1b1b;
+  width: 100%;
 }
 
 .skills {
@@ -461,4 +462,93 @@ table th {
   justify-content: center;
   gap: 10px;
   margin: 40px 0;
+}
+
+.toggle-nav-btn {
+  display: none;
+}
+
+/*Das ist für die Navigationsbar*/
+
+@media screen and (max-width: 800px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    padding-bottom: 0;
+  }
+
+  .navigation:hover {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navigation:hover .nav-text {
+    display: none;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .nav-item {
+    transition: all 0.5s ease;
+  }
+
+  .nav-item:hover {
+    transform: scale(1.2);
+  }
+
+  .circle-container {
+    display: none;
+  }
+  .profile {
+    margin-top: 20px;
+  }
+}
+
+/*Das ist für die Webseite*/
+
+@media screen and (max-width: 700px) {
+  .heading {
+    font-size: 30px;
+  }
+  .about-me {
+    width: 80%;
+  }
+
+  .skills {
+    width: 80%;
+  }
+  .projects {
+    width: 80%;
+    font-size: 12px;
+  }
+
+  .visual {
+    width: 80%;
+  }
+
+  .about-me-text {
+    text-align: center;
+  }
+  .about-me-heading {
+    text-align: center;
+  }
+  .subheading {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .heading {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .skills-table {
+    font-size: 12px;
+  }
 }
